@@ -46,15 +46,15 @@ export default function Home() {
 
             <div className={styles.upper_right}>
               <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry.
+                Olá, meu nome é Michel Schiavo, sou desenvolvedor front-end e
+                atualmente tenho 31 anos.
               </p>
 
               <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industrys standard dummy text
-                ever since the 1500s, when an unknown printer took a galley of
-                type and scrambled it to make a type specimen book.
+                Amo computação desde sempre, ainda na adolescência criei a
+                curiosidade para saber como as coisas funcionavam, depois de um
+                tempo comecei a estudar programação e me apaixonei, e cá estou
+                eu, fazendo o que amo, programar.
               </p>
             </div>
           </div>
