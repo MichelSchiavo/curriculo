@@ -10,6 +10,11 @@ const MOCKED_CONTACTS = [
     type: "email",
     url: "michel_dmc@hotmail.com",
   },
+  {
+    icon: "fa-brands fa-github fa-beat-fade",
+    text: "MichelSchiavo",
+    url: "https://github.com/MichelSchiavo",
+  },
   // {
   //   icon: "fa-solid fa-globe",
   //   text: "www.google.com",
