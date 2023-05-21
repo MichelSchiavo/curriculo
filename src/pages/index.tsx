@@ -4,6 +4,7 @@ import MOCKED_CONTACTS from "@/data/contacts";
 import MOCKED_SKILLS from "@/data/skills";
 import MOCKED_EDUCATION from "@/data/education";
 import MOCKED_EXPERIENCE from "@/data/experience";
+import MOCKED_HOBBIES from "@/data/hobbies";
 
 export default function Home() {
   function handleContactClick(type?: string, url?: string) {
@@ -142,35 +143,15 @@ export default function Home() {
           <h4 className={styles.adjst_margin}>Hobbies</h4>
 
           <ul>
-            <li>
-              <i className="fa-solid fa-music" />
-
-              <p>Music</p>
-            </li>
-
-            <li>
-              <i className="fa-solid fa-film" />
-
-              <p>Cinema</p>
-            </li>
-
-            <li>
-              <i className="fa-solid fa-gamepad" />
-
-              <p>Gaming</p>
-            </li>
-
-            <li>
-              <i className="fa-solid fa-dumbbell" />
-
-              <p>Gym</p>
-            </li>
-
-            <li>
-              <i className="fa-solid fa-book" />
-
-              <p>Reading</p>
-            </li>
+            {MOCKED_HOBBIES.map((hobbie, i) => (
+              <li
+                key={hobbie.text + i}
+                onClick={() => window.open(hobbie.url, "_blank")}
+              >
+                <i className={hobbie.icon} />
+                <p>{hobbie.text}</p>
+              </li>
+            ))}
           </ul>
         </div>
       </main>
