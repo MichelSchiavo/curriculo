@@ -10,11 +10,11 @@ const MOCKED_CONTACTS = [
     type: "email",
     url: "michel_dmc@hotmail.com",
   },
-  {
-    icon: "fa-solid fa-globe",
-    text: "www.google.com",
-    url: "https://www.google.com",
-  },
+  // {
+  //   icon: "fa-solid fa-globe",
+  //   text: "www.google.com",
+  //   url: "https://www.google.com",
+  // },
   {
     icon: "fa-brands fa-linkedin-in fa-bounce",
     text: "Linkedin",
