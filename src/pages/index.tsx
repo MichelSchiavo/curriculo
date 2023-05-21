@@ -148,6 +148,7 @@ export default function Home() {
                 <div
                   key={skill.name + i}
                   className={styles.skills_box}
+                  //@ts-ignore-block
                   style={{ "--i": skill.value }}
                 >
                   <p>{skill.name}</p>
