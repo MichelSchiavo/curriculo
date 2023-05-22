@@ -28,10 +28,10 @@ Start the server
   npm run dev
 ```
 
-## Stack utilizada
+## Stack
 
 **Front-end:** React, NextJs with typescript, pure CSS and font awesome for the icons.
 
-## Demonstração
+## Demonstration
 
 https://curriculo-michelschiavo.vercel.app
