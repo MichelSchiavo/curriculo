@@ -27,8 +27,6 @@ interface IFlagSelector {
 
 export function FlagSelector({ lang, handleClick }: IFlagSelector) {
   const [isOpen, setIsOpen] = useState(false);
-  console.log(flags[lang]);
-
   const containerRef = useRef<HTMLDivElement>(null);
 
   const selectFlag = (flag: FlagType) => {
