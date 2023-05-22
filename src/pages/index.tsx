@@ -1,13 +1,35 @@
 /* eslint-disable @next/next/no-img-element */
 import Head from "next/head";
+import { useEffect, useState } from "react";
 import styles from "@/styles/Home.module.css";
+import MOCKED_HEAD from "@/data/head";
 import MOCKED_CONTACTS from "@/data/contacts";
 import MOCKED_SKILLS from "@/data/skills";
 import MOCKED_EDUCATION from "@/data/education";
 import MOCKED_EXPERIENCE from "@/data/experience";
 import MOCKED_HOBBIES from "@/data/hobbies";
+import { FlagSelector } from "@/components/FlagSelector";
+
+const config = ["br", "en"] as const;
+
+export type Tlang = (typeof config)[number];
 
 export default function Home() {
+  const [lang, setLang] = useState<Tlang>("br");
+
+  function handleChangeLang(lang: Tlang) {
+    setLang(lang);
+    localStorage.setItem("my-lang", lang);
+  }
+
+  useEffect(() => {
+    const storedData = localStorage.getItem("my-lang");
+
+    if (storedData) {
+      handleChangeLang(storedData as Tlang);
+    }
+  }, []);
+
   function handleContactClick(type?: string, url?: string) {
     if (type === "email") {
       window.open(
@@ -31,6 +53,8 @@ export default function Home() {
       </Head>
 
       <main className={styles.container}>
+        <FlagSelector handleClick={handleChangeLang} lang={lang} />
+
         <div className={styles.top}>
           <div className={styles.topText}>
             <h2 className={styles.topTitle}>Michel Schiavo</h2>
@@ -47,27 +71,19 @@ export default function Home() {
             </div>
 
             <div className={styles.upper_right}>
-              <p>
-                Olá, meu nome é Michel Schiavo, sou desenvolvedor front-end e
-                atualmente tenho 31 anos.
-              </p>
+              <p>{MOCKED_HEAD[lang].title}</p>
 
-              <p>
-                Amo computação desde sempre, ainda na adolescência criei a
-                curiosidade para saber como as coisas funcionavam, depois de um
-                tempo comecei a estudar programação e me apaixonei, e cá estou
-                eu, fazendo o que amo, programar.
-              </p>
+              <p>{MOCKED_HEAD[lang].description}</p>
             </div>
           </div>
         </div>
 
         <div className={styles.bottom}>
           <div className={styles.bottom_left}>
-            <h4>Contact</h4>
+            <h4>{MOCKED_CONTACTS.title[lang]}</h4>
 
             <ul className={styles.contact_info}>
-              {MOCKED_CONTACTS.map((contact, i) => (
+              {MOCKED_CONTACTS.content.map((contact, i) => (
                 <li key={contact.text + i}>
                   <span className={styles.icon}>
                     <i className={`${contact.icon}`} />
@@ -85,10 +101,10 @@ export default function Home() {
               ))}
             </ul>
 
-            <h4>skills</h4>
+            <h4>{MOCKED_SKILLS.title[lang]}</h4>
 
             <div className={styles.skills}>
-              {MOCKED_SKILLS.map((skill, i) => (
+              {MOCKED_SKILLS.content.map((skill, i) => (
                 <div
                   key={skill.name + i}
                   className={styles.skills_box}
@@ -104,35 +120,42 @@ export default function Home() {
           </div>
 
           <div className={styles.bottom_right}>
-            <h4 className={styles.adjst_margin}>Education</h4>
+            <h4 className={styles.adjst_margin}>
+              {MOCKED_EDUCATION.title[lang]}
+            </h4>
 
             <div className={styles.edu_group}>
-              {MOCKED_EDUCATION.map((education, i) => (
+              {MOCKED_EDUCATION.content.map((education, i) => (
                 <div key={education.title + i} className={styles.edu_group_bx}>
                   <p>{education.time}</p>
 
                   <div>
                     <b>{education.title}</b>
 
-                    <p>{education.description}</p>
+                    <p>{education.description[lang]}</p>
                   </div>
                 </div>
               ))}
             </div>
 
-            <h4 className={styles.adjst_margin}>Experiência</h4>
+            <h4 className={styles.adjst_margin}>
+              {MOCKED_EXPERIENCE.title[lang]}
+            </h4>
 
-            {MOCKED_EXPERIENCE.map((experience, i) => (
-              <div key={experience.title + i} className={styles.edu_group}>
+            {MOCKED_EXPERIENCE.content.map((experience, i) => (
+              <div
+                key={experience.title[lang] + i}
+                className={styles.edu_group}
+              >
                 <div className={styles.edu_group_bx}>
                   <p>{experience.time}</p>
 
                   <div>
                     <b>
-                      {experience.title} <span>{experience.company}</span>
+                      {experience.title[lang]} <span>{experience.company}</span>
                     </b>
 
-                    <p>{experience.description}</p>
+                    <p>{experience.description[lang]}</p>
                   </div>
                 </div>
               </div>
@@ -146,11 +169,11 @@ export default function Home() {
           <ul>
             {MOCKED_HOBBIES.map((hobbie, i) => (
               <li
-                key={hobbie.text + i}
+                key={hobbie.text[lang] + i}
                 onClick={() => window.open(hobbie.url, "_blank")}
               >
                 <i className={hobbie.icon} />
-                <p>{hobbie.text}</p>
+                <p>{hobbie.text[lang]}</p>
               </li>
             ))}
           </ul>

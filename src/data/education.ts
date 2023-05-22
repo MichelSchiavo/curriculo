@@ -1,16 +1,27 @@
-const MOCKED_EDUCATION = [
-  {
-    time: "2022-2023",
-    title: "Ignite",
-    description:
-      "Cursando o Ignite da Rocketseat, bootcamp focado em ReactJs e React Native.",
+const MOCKED_EDUCATION = {
+  title: {
+    br: "Educação",
+    en: "Education",
   },
-  {
-    time: "2023",
-    title: "Engenharia de software",
-    description:
-      "Cursando engenharia de software na Universidade Estácio de Sá.",
-  },
-];
+
+  content: [
+    {
+      time: "2022-2023",
+      title: "Ignite",
+      description: {
+        br: "Cursando o Ignite da Rocketseat, um programa de aceleração de carreira, focado em desenvolvimento web e mobile.",
+        en: "Studying Ignite from Rocketseat, a career acceleration program, focused on web and mobile development.",
+      },
+    },
+    {
+      time: "2023",
+      title: "Engenharia de software",
+      description: {
+        br: "Cursando Engenharia de software na Estácio de Sá.",
+        en: "Studying Software Engineering at Estácio de Sá.",
+      },
+    },
+  ],
+};
 
 export default MOCKED_EDUCATION;

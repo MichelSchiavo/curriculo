@@ -1,0 +1,33 @@
+.container {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  z-index: 500;
+}
+
+.flag {
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: absolute;
+  top: 0;
+  right: 40px;
+  display: flex;
+  gap: 8px;
+  animation: dropdown 0.5s ease-in-out;
+}
+
+@keyframes dropdown {
+  0% {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
