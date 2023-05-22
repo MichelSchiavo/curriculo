@@ -230,3 +230,68 @@
 .hobbies ul li i {
   font-size: 2em;
 }
+
+@media screen and (max-width: 768px) {
+  .container {
+    min-height: auto;
+  }
+
+  .group {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .top {
+    padding: 24px;
+    height: auto;
+  }
+
+  .topTitle {
+    font-size: 2em;
+  }
+
+  .topJob {
+    font-size: 1.2em;
+  }
+
+  .bottom {
+    grid-template-columns: 1fr;
+    margin: 24px;
+  }
+
+  .hobbies {
+    padding: 0 24px 50px;
+  }
+
+  .hobbies ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-between;
+  }
+
+  .hobbies ul li {
+    width: calc(100%);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    margin: 0;
+  }
+
+  .container h4 {
+    font-size: 1em;
+  }
+
+  .topTitle {
+    font-size: 1.5em;
+  }
+
+  .topJob {
+    font-size: 1em;
+  }
+
+  .upper_right p {
+    font-size: 1em;
+  }
+}
