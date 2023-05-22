@@ -236,6 +236,10 @@
     min-height: auto;
   }
 
+  .adjst_margin {
+    margin: 0;
+  }
+
   .group {
     grid-template-columns: 1fr;
     gap: 20px;
@@ -257,6 +261,16 @@
   .bottom {
     grid-template-columns: 1fr;
     margin: 24px;
+  }
+
+  .bottom_left {
+    margin: 0;
+  }
+
+  .edu_group_bx {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
   }
 
   .hobbies {
