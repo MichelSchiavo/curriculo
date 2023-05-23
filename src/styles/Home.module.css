@@ -205,7 +205,7 @@
 .hobbies ul {
   display: flex;
   margin-top: 30px;
-  gap: 20px;
+  gap: 16px;
   justify-content: space-between;
 }
 .hobbies ul li {
@@ -234,6 +234,7 @@
 @media screen and (max-width: 768px) {
   .container {
     min-height: auto;
+    margin: 0;
   }
 
   .adjst_margin {
@@ -274,17 +275,21 @@
   }
 
   .hobbies {
-    padding: 0 24px 50px;
+    padding: 0 0 24px 24px;
   }
 
   .hobbies ul {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    justify-content: space-between;
+    padding-right: 0;
+    padding-bottom: 8px;
+    overflow-x: scroll;
   }
 
   .hobbies ul li {
-    width: calc(100%);
+    min-width: 160px;
+  }
+
+  .hobbies ul li:last-child {
+    margin-right: 24px;
   }
 }
 
