@@ -7,9 +7,13 @@ const MOCKED_SKILLS = {
   content: [
     { name: "HTML", value: "75%" },
     { name: "CSS", value: "75%" },
-    { name: "JS", value: "82%" },
-    { name: "TS", value: "65%" },
-    { name: "React", value: "70%" },
+    { name: "Javascript", value: "82%" },
+    { name: "Typescript", value: "65%" },
+    { name: "React", value: "76%" },
+    { name: "NextJs", value: "70%" },
+    { name: "styled Components", value: "72%" },
+    { name: "Strapi", value: "60%" },
+    { name: "Story-Book", value: "50%" },
   ],
 };
 
