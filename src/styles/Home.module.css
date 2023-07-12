@@ -13,7 +13,7 @@
   text-transform: uppercase;
   letter-spacing: 0.25em;
   color: #fff;
-  background: #231fbf;
+  background: linear-gradient(45deg, #231fbf, #69175f);
   font-weight: 600;
   padding: 0 15px;
   margin-top: 40px;
@@ -155,7 +155,7 @@
   left: 0;
   width: var(--i);
   height: 100%;
-  background: #231fbf;
+  background: linear-gradient(45deg, #231fbf, #69175f);
 }
 
 .bottom_right {
@@ -223,7 +223,7 @@
 }
 
 .hobbies ul li:hover {
-  background-color: #231fbf;
+  background: linear-gradient(45deg, #231fbf, #69175f);
   color: #fff;
 }
 
