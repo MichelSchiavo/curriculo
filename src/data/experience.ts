@@ -10,8 +10,8 @@ const MOCKED_EXPERIENCE = {
       title: { br: "Desenvolvedor Front-end", en: "Front-end Developer" },
       company: "Workfy/Adbat",
       description: {
-        br: "Desenvolvimento de aplicações web e mobile, utilizando ReactJs.",
-        en: "Development of web and mobile applications, using ReactJs.",
+        br: "Desenvolvimento de aplicações web e mobile, utilizando ReactJs, NextJs, Styled-components, Strapi e Storybook, tudo em typescript.",
+        en: "Development of web and mobile applications, using ReactJs, NextJs, Styled-components, Strapi and Storybook, all in typescript.",
       },
     },
   ],
