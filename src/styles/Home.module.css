@@ -3,9 +3,12 @@
   max-width: 62.5rem;
   min-height: 62.5rem;
   margin: 48px 0;
-  background: #fff;
-  box-shadow: 0 35px 55px rgba(0, 0, 0, 0.1);
+  background: var(--card-bg);
+  box-shadow: 0 10px 30px var(--border-color);
   position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  animation: fadeIn 0.5s ease-out;
 }
 
 .container h4 {
@@ -13,33 +16,38 @@
   text-transform: uppercase;
   letter-spacing: 0.25em;
   color: #fff;
-  background: linear-gradient(45deg, #231fbf, #69175f);
+  background: var(--accent-gradient);
   font-weight: 600;
   padding: 0 15px;
   margin-top: 40px;
   display: inline-flex;
+  border-radius: 4px 4px 0 0;
 }
 
 .top {
   position: relative;
   width: 100%;
   height: 400px;
-  background: linear-gradient(45deg, #231fbf, #69175f);
+  background: var(--accent-gradient);
   padding: 48px;
+  border-radius: 12px 12px 0 0;
 }
 
 .topText {
   display: flex;
   flex-direction: column;
   gap: 16px;
+  animation: slideIn 0.6s ease-out;
 }
 
 .topTitle {
   font-size: 3em;
   color: #fff;
   text-transform: uppercase;
-  line-height: 0.7em;
+  line-height: 0.9em;
   letter-spacing: 0.1em;
+  font-weight: 700;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .topJob {
@@ -47,8 +55,9 @@
   font-weight: 300;
   color: #fff;
   text-transform: uppercase;
-  line-height: 0.7em;
+  line-height: 1em;
   letter-spacing: 0.1em;
+  opacity: 0.9;
 }
 
 .group {
@@ -63,23 +72,39 @@
 .upper_left {
   width: 100%;
   height: 100%;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+  transform: translateY(0);
+  transition: transform 0.3s ease;
+}
+
+.upper_left:hover {
+  transform: translateY(-5px);
 }
 
 .img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.upper_left:hover .img {
+  transform: scale(1.03);
 }
 
 .upper_right {
   display: flex;
   flex-direction: column;
   gap: 16px;
+  animation: fadeIn 0.8s ease-out;
 }
 
 .upper_right p {
   color: #fff;
   font-size: 1.05em;
+  line-height: 1.7;
 }
 
 .bottom {
@@ -92,6 +117,7 @@
 
 .bottom_left {
   margin-top: 48px;
+  animation: fadeIn 0.9s ease-out;
 }
 
 .contact_info {
@@ -104,21 +130,33 @@
 
 .contact_info li {
   display: flex;
-  gap: 10px;
+  gap: 15px;
+  align-items: center;
+  padding: 8px 0;
+  transition: transform 0.2s ease;
+}
+
+.contact_info li:hover {
+  transform: translateX(5px);
 }
 
 .icon {
-  color: #231fbf;
+  color: var(--icon-color);
+  width: 25px;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .icon_text {
-  color: #555;
+  color: var(--text-color);
   cursor: pointer;
   transition: color 0.2s ease-in-out;
 }
 
 .icon_text:hover {
-  color: #231fbf;
+  color: var(--accent-color);
 }
 
 .skills {
@@ -135,30 +173,36 @@
   display: grid;
   align-items: center;
   grid-template-columns: 2fr 3fr;
+  gap: 15px;
 }
 
 .skills_box p {
-  color: #333;
+  color: var(--text-color);
 }
 
 .skills_value {
   position: relative;
   width: 100%;
   height: 10px;
-  background: #eee;
+  background: var(--secondary-bg);
+  border-radius: 5px;
+  overflow: hidden;
 }
 
 .skills_value::before {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   left: 0;
   width: var(--i);
   height: 100%;
-  background: linear-gradient(45deg, #231fbf, #69175f);
+  background: var(--accent-gradient);
+  border-radius: 5px;
+  transition: width 1.2s ease-in-out;
 }
 
 .bottom_right {
+  animation: fadeIn 1s ease-out;
 }
 
 .adjst_margin {
@@ -178,15 +222,23 @@
   position: relative;
   display: grid;
   grid-template-columns: 1fr 3fr;
+  gap: 15px;
+  padding: 10px 0;
+  transition: transform 0.2s ease;
+}
+
+.edu_group_bx:hover {
+  transform: translateY(-3px);
 }
 
 .edu_group_bx p:nth-child(1) {
   font-weight: 500;
+  color: var(--subtitle-color);
 }
 
 .edu_group_bx b {
   font-weight: 600;
-  color: #231fbf;
+  color: var(--accent-color);
   display: flex;
   flex-direction: column;
 }
@@ -195,11 +247,16 @@
   position: relative;
   top: -2px;
   font-size: 0.8em;
-  color: #666;
+  color: var(--subtitle-color);
+}
+
+.edu_group_bx p:not(:nth-child(1)) {
+  color: var(--text-color);
 }
 
 .hobbies {
   padding: 0 50px 50px;
+  animation: fadeIn 1.1s ease-out;
 }
 
 .hobbies ul {
@@ -208,33 +265,38 @@
   gap: 16px;
   justify-content: space-between;
 }
+
 .hobbies ul li {
-  color: #333;
+  color: var(--text-color);
   width: calc(100% / 6);
   padding: 20px 0;
-  border-radius: 4px;
+  border-radius: 8px;
   display: flex;
   flex-direction: column;
-  gap: 5px;
-  background: #f3f3f3;
+  gap: 10px;
+  background: var(--secondary-bg);
   text-align: center;
   cursor: pointer;
-  transition: all 0.2s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 2px 5px var(--border-color);
 }
 
 .hobbies ul li:hover {
-  background: linear-gradient(45deg, #231fbf, #69175f);
+  background: var(--accent-gradient);
   color: #fff;
+  transform: translateY(-5px);
 }
 
 .hobbies ul li i {
   font-size: 2em;
+  margin-bottom: 5px;
 }
 
 @media screen and (max-width: 768px) {
   .container {
     min-height: auto;
-    margin: 0;
+    margin: 20px 0;
+    border-radius: 8px;
   }
 
   .adjst_margin {
@@ -247,8 +309,9 @@
   }
 
   .top {
-    padding: 24px;
+    padding: 30px;
     height: auto;
+    border-radius: 8px 8px 0 0;
   }
 
   .topTitle {
@@ -261,7 +324,8 @@
 
   .bottom {
     grid-template-columns: 1fr;
-    margin: 24px;
+    margin: 30px;
+    gap: 20px;
   }
 
   .bottom_left {
@@ -275,39 +339,45 @@
   }
 
   .hobbies {
-    padding: 0;
+    padding: 0 30px 30px;
   }
 
   .hobbies h4 {
-    margin-left: 24px;
+    margin-left: 0;
   }
 
   .hobbies ul {
     padding-right: 0;
-    padding-bottom: 8px;
+    padding-bottom: 15px;
     overflow-x: scroll;
   }
 
   .hobbies ul li {
-    min-width: 160px;
+    min-width: 140px;
+    flex-shrink: 0;
   }
 
   .hobbies ul li:first-child {
-    margin-left: 24px;
+    margin-left: 0;
   }
 
   .hobbies ul li:last-child {
-    margin-right: 24px;
+    margin-right: 0;
   }
 }
 
 @media screen and (max-width: 480px) {
   .container {
-    margin: 0;
+    margin: 10px 0;
+    border-radius: 6px;
   }
 
   .container h4 {
     font-size: 1em;
+  }
+
+  .top {
+    padding: 20px;
   }
 
   .topTitle {
@@ -322,7 +392,12 @@
     font-size: 1em;
   }
 
-  .hobbies ul li {
-    min-width: 140px;
+  .bottom {
+    margin: 20px;
+  }
+
+  .skills_box {
+    grid-template-columns: 1fr;
+    gap: 8px;
   }
 }
