@@ -1,0 +1,36 @@
+{
+  "pt": {
+    "personal_info": "Informações Pessoais",
+    "contact": "Contato",
+    "technical_skills": "Habilidades Técnicas",
+    "languages": "Idiomas",
+    "professional_experience": "Experiência Profissional",
+    "featured_projects": "Projetos em Destaque",
+    "education": "Formação Acadêmica",
+    "personal_skills": "Competências Pessoais",
+    "download_pdf": "Baixar PDF",
+    "view_project": "Ver Projeto",
+    "currently_studying": "Cursando",
+    "native": "Nativo",
+    "intermediate": "Intermediário",
+    "advanced": "Avançado",
+    "beginner": "Iniciante"
+  },
+  "en": {
+    "personal_info": "Personal Information",
+    "contact": "Contact",
+    "technical_skills": "Technical Skills",
+    "languages": "Languages",
+    "professional_experience": "Professional Experience",
+    "featured_projects": "Featured Projects",
+    "education": "Education",
+    "personal_skills": "Personal Skills",
+    "download_pdf": "Download PDF",
+    "view_project": "View Project",
+    "currently_studying": "Currently Studying",
+    "native": "Native",
+    "intermediate": "Intermediate",
+    "advanced": "Advanced",
+    "beginner": "Beginner"
+  }
+}

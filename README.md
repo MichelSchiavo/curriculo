@@ -1,117 +1,177 @@
-# 📄 Curriculum Online - Michel Schiavo
+# 📄 Currículo Web Moderno
 
-Um currículo online moderno, responsivo e personalizável, construído com Next.js e TypeScript.
-
-![Curriculum Preview](https://via.placeholder.com/800x450.png?text=Curriculum+Preview)
-_Substitua esta imagem com um screenshot do seu currículo_
+Um currículo web moderno, elegante e responsivo desenvolvido com Next.js 15, TypeScript e Tailwind CSS. Este projeto apresenta informações profissionais de forma atrativa e interativa, com suporte completo para português e inglês.
 
 ## ✨ Funcionalidades
 
-- **Design Responsivo** - Otimizado para todos os tamanhos de tela (Mobile First)
-- **Alternância de Tema** - Modos claro e escuro para maior conforto visual
-- **Multilíngue** - Suporte para Português (BR) e Inglês (EN)
-- **Interface Moderna** - Animações suaves e design contemporâneo
-- **Personalização Fácil** - Estrutura de dados simples para atualização rápida de informações
+- 🎨 **Design Moderno**: Interface limpa e profissional com gradientes suaves
+- 🌍 **Bilíngue**: Suporte completo para português e inglês
+- 📱 **Totalmente Responsivo**: Layout adaptativo para todos os dispositivos
+- ⚡ **Performance Otimizada**: Construído com Next.js 15 e Turbopack
+- 🎯 **Tipagem Segura**: Desenvolvido com TypeScript
+- 🎨 **Tailwind CSS**: Estilização moderna e responsiva
 
-## 🚀 Tecnologias
+## 🚀 Começando
 
-- [Next.js](https://nextjs.org/) - Framework React para produção
-- [TypeScript](https://www.typescriptlang.org/) - JavaScript com tipagem
-- [CSS Modules](https://github.com/css-modules/css-modules) - Encapsulamento de estilos
-- [Font Awesome](https://fontawesome.com/) - Biblioteca de ícones
+### Pré-requisitos
 
-## 🛠️ Como Executar
+- Node.js 18+
+- npm, yarn, pnpm ou bun
 
-1. **Clone o repositório**
+### Instalação
+
+1. Clone o repositório
 
 ```bash
-git clone https://github.com/seu-usuario/curriculo.git
+git clone <url-do-repositorio>
 cd curriculo
 ```
 
-2. **Instale as dependências**
+2. Instale as dependências
 
 ```bash
 npm install
 # ou
 yarn install
+# ou
+pnpm install
 ```
 
-3. **Execute o servidor de desenvolvimento**
+3. Execute o servidor de desenvolvimento
 
 ```bash
 npm run dev
 # ou
 yarn dev
+# ou
+pnpm dev
+# ou
+bun dev
 ```
 
-4. **Acesse no navegador**
+4. Abra [http://localhost:3000](http://localhost:3000) no seu navegador
 
-Abra [http://localhost:3000](http://localhost:3000) com seu navegador para ver o resultado.
-
-## 📂 Estrutura do Projeto
+## 📁 Estrutura do Projeto
 
 ```
-/src
-  /components - Componentes reutilizáveis
-    /FlagSelector - Seletor de idioma
-    /ThemeToggle - Alternador de tema claro/escuro
-  /contexts
-    /ThemeContext.tsx - Gerenciamento do tema
-  /data - Arquivos com dados do currículo
-    /contacts.ts - Informações de contato
-    /education.ts - Informações educacionais
-    /experience.ts - Experiência profissional
-    /head.ts - Dados do cabeçalho
-    /hobbies.ts - Hobbies e interesses
-    /skills.ts - Habilidades técnicas
-  /pages - Páginas da aplicação
-    /_app.tsx - Configuração global da aplicação
-    /index.tsx - Página principal do currículo
-  /styles - Arquivos de estilo
-    /globals.css - Estilos globais
-    /Home.module.css - Estilos específicos da página principal
+src/
+├── app/
+│   ├── page.tsx          # Página principal do currículo
+│   ├── layout.tsx        # Layout da aplicação
+│   └── globals.css       # Estilos globais
+└── data/
+    ├── cv-data.json      # Dados do currículo (PT/EN)
+    └── translations.json # Traduções da interface
 ```
 
-## 🔧 Personalização
+## 🛠️ Personalização
 
-### Dados do Currículo
+### Editando os Dados do Currículo
 
-Para personalizar suas informações, edite os arquivos dentro do diretório `/src/data/`:
+Para personalizar o currículo com suas informações:
 
-- `head.ts` - Título e descrição do cabeçalho
-- `contacts.ts` - Informações de contato
-- `skills.ts` - Habilidades e níveis de proficiência
-- `education.ts` - Formação acadêmica
-- `experience.ts` - Experiência profissional
-- `hobbies.ts` - Hobbies e interesses
+1. **Dados Pessoais**: Edite o arquivo `src/data/cv-data.json`
+2. **Traduções**: Modifique `src/data/translations.json` para adicionar novos textos
 
-### Temas e Estilos
+### Estrutura dos Dados
 
-Para modificar as cores e estilos do tema:
+```json
+{
+  "pt": {
+    "nome_completo": "Seu Nome",
+    "titulo_profissional": "Seu Cargo",
+    "contato": {
+      "email": "seu@email.com",
+      "telefone": "(xx) xxxxx-xxxx",
+      "localizacao": "Sua Cidade"
+    },
+    "links": {
+      "linkedin": "https://linkedin.com/in/seu-perfil",
+      "github": "https://github.com/seu-usuario",
+      "portfolio": "https://seu-portfolio.com"
+    }
+    // ... outros campos
+  }
+}
+```
 
-1. Abra o arquivo `/src/styles/globals.css`
-2. Ajuste as variáveis CSS dentro dos seletores `:root` (tema claro) e `[data-theme="dark"]` (tema escuro)
+## 🎨 Seções do Currículo
 
-### Idiomas
+- **Informações Pessoais**: Nome, título, contatos e links sociais
+- **Habilidades Técnicas**: Lista de tecnologias e ferramentas
+- **Idiomas**: Proficiência em diferentes idiomas
+- **Experiência Profissional**: Histórico de trabalho com timeline
+- **Projetos em Destaque**: Portfolio de projetos com links
+- **Formação Acadêmica**: Educação e certificações
+- **Competências Pessoais**: Soft skills e características pessoais
 
-Para adicionar ou modificar traduções:
+## 🌍 Internacionalização
 
-1. Adicione a nova língua ao array `config` em `/src/pages/index.tsx`
-2. Adicione as traduções correspondentes em cada arquivo do diretório `/src/data/`
+O projeto suporta completamente português e inglês:
 
-## 👤 Autor
+- Alternância de idioma através do botão no cabeçalho
+- Todos os textos da interface são traduzidos
+- Dados do currículo disponíveis em ambos os idiomas
 
-**Michel Schiavo**
+## 🎨 Tecnologias Utilizadas
 
-- LinkedIn: [Michel Schiavo](https://www.linkedin.com/in/michel-schiavo-a2b3861a0/)
-- GitHub: [MichelSchiavo](https://github.com/MichelSchiavo)
-- Email: michel_dmc@hotmail.com
+- **[Next.js 15](https://nextjs.org)** - Framework React
+- **[TypeScript](https://www.typescriptlang.org)** - Tipagem estática
+- **[Tailwind CSS](https://tailwindcss.com)** - Framework CSS
+- **[React](https://reactjs.org)** - Biblioteca de interface
+- **Turbopack** - Build tool otimizado
 
-## 📝 Licença
+## 📱 Responsividade
 
-Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+O design é totalmente responsivo e otimizado para:
+
+- 📱 **Mobile**: Layout em coluna única
+- 📟 **Tablet**: Layout adaptativo
+- 💻 **Desktop**: Layout em duas colunas
+- 🖥️ **Grandes telas**: Layout otimizado
+
+## 🚀 Deploy
+
+### Vercel (Recomendado)
+
+A forma mais fácil de fazer deploy é usar a [Plataforma Vercel](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme):
+
+1. Conecte seu repositório GitHub à Vercel
+2. Configure as variáveis de ambiente (se necessário)
+3. Deploy automático a cada push
+
+### Outras Plataformas
+
+O projeto pode ser deployed em qualquer plataforma que suporte Next.js:
+
+- Netlify
+- Railway
+- AWS
+- DigitalOcean
+
+## 📚 Saiba Mais
+
+Para aprender mais sobre as tecnologias utilizadas:
+
+- [Documentação do Next.js](https://nextjs.org/docs)
+- [Tutorial Interativo do Next.js](https://nextjs.org/learn)
+- [Documentação do Tailwind CSS](https://tailwindcss.com/docs)
+- [Guia do TypeScript](https://www.typescriptlang.org/docs)
+
+## 🤝 Contribuição
+
+Contribuições são bem-vindas! Sinta-se à vontade para:
+
+1. Fazer fork do projeto
+2. Criar uma branch para sua feature
+3. Commit suas mudanças
+4. Push para a branch
+5. Abrir um Pull Request
+
+## 📄 Licença
+
+Este projeto está sob a licença MIT. Veja o arquivo `LICENSE` para mais detalhes.
 
 ---
 
-💼 Desenvolvido como um currículo online moderno e interativo. Sinta-se livre para clonar e adaptar para seu próprio uso!
+Desenvolvido com ❤️ por [Michel Schiavo](https://github.com/MichelSchiavo)

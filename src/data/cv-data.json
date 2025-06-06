@@ -1,0 +1,200 @@
+{
+  "pt": {
+    "nome_completo": "Michel Felipe da Silva Schiavo",
+    "titulo_profissional": "Desenvolvedor Front-end",
+    "contato": {
+      "email": "michel_dmc@hotmail.com",
+      "telefone": "(19) 98840-6240",
+      "localizacao": "Brasil"
+    },
+    "links": {
+      "linkedin": "https://www.linkedin.com/in/michel-schiavo-a2b3861a0/",
+      "github": "https://github.com/MichelSchiavo",
+      "portfolio": "https://curriculo-michelschiavo.vercel.app"
+    },
+    "habilidades_tecnicas": [
+      "Lua",
+      "HTML",
+      "CSS",
+      "Javascript",
+      "Typescript",
+      "SASS",
+      "Syled Components",
+      "ReactJs",
+      "React native",
+      "NextJs",
+      "Storybook",
+      "Strapi",
+      "Git",
+      "Slack",
+      "Tailwind"
+    ],
+    "idiomas": [
+      {
+        "idioma": "Português",
+        "nivel": "Nativo"
+      },
+      {
+        "idioma": "Inglês",
+        "nivel": "Intermediário"
+      }
+    ],
+    "experiencia_profissional": [
+      {
+        "cargo": "Desenvolvedor Front End",
+        "empresa": "Schiavo's consultoria",
+        "periodo": "Setembro 2023 - Janeiro 2025",
+        "descricao": "Desenvolvimento de aplicações web com React, Next.js e tecnologias modernas de front-end."
+      },
+      {
+        "cargo": "Desenvolvedor Front End",
+        "empresa": "WORKFY/ADBAT",
+        "periodo": "Outubro 2021 - Junho 2023",
+        "descricao": "Atuação no desenvolvimento de interfaces responsivas e experiências de usuário utilizando React e bibliotecas relacionadas."
+      },
+      {
+        "cargo": "Desenvolvedor de Jogos",
+        "empresa": "Projetos Independentes",
+        "periodo": "Projetos diversos",
+        "descricao": "Desenvolvimento de interfaces de usuário para jogos utilizando Lua, JavaScript, HTML e CSS."
+      }
+    ],
+    "projetos_destaque": [
+      {
+        "nome": "Unitok",
+        "url": "https://www.unitok.com",
+        "descricao": "Plataforma desenvolvida com React e tecnologias modernas de front-end."
+      },
+      {
+        "nome": "Canopus",
+        "url": "https://www.canopus.com.br",
+        "descricao": "Site institucional desenvolvido com foco em experiência do usuário."
+      },
+      {
+        "nome": "Construct Apartiani",
+        "url": "https://www.construtorapatriani.com.br",
+        "descricao": "Plataforma para empresa do setor de construção civil."
+      },
+      {
+        "nome": "Restaurante Piselli",
+        "url": "https://www.restaurante.piselli.com.br",
+        "descricao": "Site para estabelecimento gastronômico com design responsivo."
+      }
+    ],
+    "formacao_academica": [
+      {
+        "curso": "Engenharia de Software",
+        "instituicao": "Estácio",
+        "status": "Cursando"
+      }
+    ],
+    "competencias_pessoais": [
+      "Capacidade de fácil adaptação",
+      "Responsabilidade",
+      "Boa comunicação",
+      "Atenção aos detalhes",
+      "Espírito de equipe",
+      "Colaboração e trabalho em equipe",
+      "Boa gestão de tempo"
+    ]
+  },
+  "en": {
+    "nome_completo": "Michel Felipe da Silva Schiavo",
+    "titulo_profissional": "Front-end Developer",
+    "contato": {
+      "email": "michel_dmc@hotmail.com",
+      "telefone": "(19) 98840-6240",
+      "localizacao": "Brazil"
+    },
+    "links": {
+      "linkedin": "https://www.linkedin.com/in/michel-schiavo-a2b3861a0/",
+      "github": "https://github.com/MichelSchiavo",
+      "portfolio": "https://curriculo-michelschiavo.vercel.app"
+    },
+    "habilidades_tecnicas": [
+      "Lua",
+      "HTML",
+      "CSS",
+      "Javascript",
+      "Typescript",
+      "SASS",
+      "Syled Components",
+      "ReactJs",
+      "React native",
+      "NextJs",
+      "Storybook",
+      "Strapi",
+      "Git",
+      "Slack",
+      "Tailwind"
+    ],
+    "idiomas": [
+      {
+        "idioma": "Portuguese",
+        "nivel": "Native"
+      },
+      {
+        "idioma": "English",
+        "nivel": "Intermediate"
+      }
+    ],
+    "experiencia_profissional": [
+      {
+        "cargo": "Front End Developer",
+        "empresa": "Schiavo's Consultancy",
+        "periodo": "September 2023 - January 2025",
+        "descricao": "Development of web applications with React, Next.js and modern front-end technologies."
+      },
+      {
+        "cargo": "Front End Developer",
+        "empresa": "WORKFY/ADBAT",
+        "periodo": "October 2021 - June 2023",
+        "descricao": "Working on the development of responsive interfaces and user experiences using React and related libraries."
+      },
+      {
+        "cargo": "Game Developer",
+        "empresa": "Independent Projects",
+        "periodo": "Various projects",
+        "descricao": "Development of user interfaces for games using Lua, JavaScript, HTML and CSS."
+      }
+    ],
+    "projetos_destaque": [
+      {
+        "nome": "Unitok",
+        "url": "https://www.unitok.com",
+        "descricao": "Platform developed with React and modern front-end technologies."
+      },
+      {
+        "nome": "Canopus",
+        "url": "https://www.canopus.com.br",
+        "descricao": "Institutional website developed with a focus on user experience."
+      },
+      {
+        "nome": "Construct Apartiani",
+        "url": "https://www.construtorapatriani.com.br",
+        "descricao": "Platform for a construction company."
+      },
+      {
+        "nome": "Restaurante Piselli",
+        "url": "https://www.restaurante.piselli.com.br",
+        "descricao": "Website for a restaurant with responsive design."
+      }
+    ],
+    "formacao_academica": [
+      {
+        "curso": "Software Engineering",
+        "instituicao": "Estácio",
+        "status": "Currently Studying"
+      }
+    ],
+    "competencias_pessoais": [
+      "Easy adaptation capacity",
+      "Responsibility",
+      "Good communication",
+      "Attention to detail",
+      "Team spirit",
+      "Collaboration and teamwork",
+      "Good time management"
+    ]
+  }
+}

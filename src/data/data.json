@@ -1,0 +1,99 @@
+{
+  "nome_completo": "Michel Felipe da Silva Schiavo",
+  "titulo_profissional": "Front-end Developer",
+  "contato": {
+    "email": "michel_dmc@hotmail.com",
+    "telefone": "(19) 98840-6240",
+    "localizacao": "Brasil"
+  },
+  "links": {
+    "linkedin": "https://www.linkedin.com/in/michel-schiavo-a2b386iao/",
+    "github": "https://github.com/MichelSchiavo",
+    "portfolio": "https://curriculo-michelschiavo.vercel.app"
+  },
+  "habilidades_tecnicas": [
+    "Lua",
+    "HTML",
+    "CSS",
+    "Javascript",
+    "Typescript",
+    "SASS",
+    "Syled Components",
+    "ReactJs",
+    "React native",
+    "NextJs",
+    "Storybook",
+    "Strapi",
+    "Git",
+    "Slack",
+    "Tailwind"
+  ],
+  "idiomas": [
+    {
+      "idioma": "Português",
+      "nivel": "Nativo"
+    },
+    {
+      "idioma": "Inglês",
+      "nivel": "Intermediário"
+    }
+  ],
+  "experiencia_profissional": [
+    {
+      "cargo": "Desenvolvedor Front End",
+      "empresa": "Schiavo’s consultoria",
+      "periodo": "Setembro 2023 - Janeiro 2025",
+      "descricao": "Desenvolvimento de aplicações web com React, Next.js e tecnologias modernas de front-end."
+    },
+    {
+      "cargo": "Desenvolvedor Front End",
+      "empresa": "WORKFY/ADBAT",
+      "periodo": "Outubro 2021 - Junho 2023",
+      "descricao": "Atuação no desenvolvimento de interfaces responsivas e experiências de usuário utilizando React e bibliotecas relacionadas."
+    },
+    {
+      "cargo": "Desenvolvedor de Jogos",
+      "empresa": "Projetos Independentes",
+      "periodo": "Projetos diversos",
+      "descricao": "Desenvolvimento de interfaces de usuário para jogos utilizando Lua, JavaScript, HTML e CSS."
+    }
+  ],
+  "projetos_destaque": [
+    {
+      "nome": "Unitok",
+      "url": "https://www.unitok.com.br",
+      "descricao": "Plataforma desenvolvida com React e tecnologias modernas de front-end."
+    },
+    {
+      "nome": "Canopus",
+      "url": "https://www.canopus.com.br",
+      "descricao": "Site institucional desenvolvido com foco em experiência do usuário."
+    },
+    {
+      "nome": "Construct Apartiani",
+      "url": "https://www.constructapartiani.com.br",
+      "descricao": "Plataforma para empresa do setor de construção civil."
+    },
+    {
+      "nome": "Restaurante Piselli",
+      "url": "https://www.restaurante.piselli.com.br",
+      "descricao": "Site para estabelecimento gastronômico com design responsivo."
+    }
+  ],
+  "formacao_academica": [
+    {
+      "curso": "Engenharia de Software",
+      "instituicao": "Estácio",
+      "status": "Cursando"
+    }
+  ],
+  "competencias_pessoais": [
+    "Capacidade de fácil adaptação",
+    "Responsabilidade",
+    "Boa comunicação",
+    "Atenção aos detalhes",
+    "Espírito de equipe",
+    "Colaboração e trabalho em equipe",
+    "Boa gestão de tempo"
+  ]
+}
